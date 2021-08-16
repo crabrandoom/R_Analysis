@@ -30,7 +30,7 @@ The P-value for Lot 2 was .6 indicating no statiscally significant findings.
 
 ![Lot2.PNG](https://github.com/crabrandoom/R_Analysis/blob/main/Lot2.PNG)
 
-The P-value for Lot 3 was .04 indicating a statistically significant findings.
+The P-value for Lot 3 was .04 indicating a statistically significant finding.
 
 ![Lot3.PNG](https://github.com/crabrandoom/R_Analysis/blob/main/Lot3.PNG)
 
