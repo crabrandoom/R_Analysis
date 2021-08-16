@@ -35,5 +35,6 @@ lotThree <- subset(suspension, Manufacturing_Lot == "Lot3")
 
 #t texts for each lot
 t.test(lotOne$PSI, mu=1500)
-t.test(lotTWo$PSI, mu=1500)
+t.test(lotTwo$PSI, mu=1500)
 t.test(lotThree$PSI, mu=1500)
+
