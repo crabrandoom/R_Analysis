@@ -17,16 +17,27 @@ From our linear regression model, the r-squared value is 0.71, which means that 
 
 ![Lot_Summary.PNG](https://github.com/crabrandoom/R_Analysis/blob/main/Lot_Summary.PNG)
 
+The design specifications require that variance not exceed 100 PSI for eat lot. Overall the lots meet that criteria with a variance of 62. However, when looking at the lots individually, Lot 3 is out of the bounds of the acceptable criteria with a variance of 170.
+
 
 ## T-Tests on Suspension Coils
 
+The P-value for Lot 1 was 1 indicating no statistically significant findings.
 
 ![Lot1.PNG](https://github.com/crabrandoom/R_Analysis/blob/main/Lot1.PNG)
 
+The P-value for Lot 2 was .6 indicating no statiscally significant findings.
+
 ![Lot2.PNG](https://github.com/crabrandoom/R_Analysis/blob/main/Lot2.PNG)
+
+The P-value for Lot 3 was .04 indicating a statistically significant findings.
 
 ![Lot3.PNG](https://github.com/crabrandoom/R_Analysis/blob/main/Lot3.PNG)
 
+Overall the P-value for the lots was .06 indicating no statistically significant findings.
+
 ![Lots.PNG](https://github.com/crabrandoom/R_Analysis/blob/main/Lots.PNG)
+
+
 
 ## Study Design: MechaCar vs Competiiton
