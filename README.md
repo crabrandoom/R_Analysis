@@ -41,3 +41,13 @@ Overall the P-value for the lots was .06 indicating no statistically significant
 
 
 ## Study Design: MechaCar vs Competiiton
+
+A good way to compare performance of the MechaCar to it's competition would be to compare metrics MPG and Cost
+
+If MechaCar is indeed a better choice than it's competition, then we will see a weaker correlation between price and MPG than it's competition. This would indicate that for Mechacar, you will recieve better MPG for a less overall cost on the car.
+
+The null hypothesis is that there is no difference between the correlation on the price and MPG for either the MechaCar or the Competition's.
+
+The statistical test used to determine correlation of the Cost and the MPG for both cars, and then compare the two R-values.
+
+Data needed for this analysis would be both the purchase price of the cars and the overall MPG as well.
