@@ -12,11 +12,28 @@ summary(lm(formula = mpg ~ AWD + vehicle_length + vehicle_weight + ground_cleara
 
 
 
-
+#import the data as a table
 suspension <- read.csv(file='Suspension_Coil.csv',check.names=F,stringsAsFactors = F)
 
+#create dataframe with mean median variance standarr deviation of the PSI
+total_summary <- suspension %>% summarize(Mean_Psi=mean(PSI),Median_Psi=median(PSI),Variance=var(PSI),SD=sd(PSI), .groups = 'keep') 
 
-total_summary <- suspension %>% summarize(Mean_Psi=mean(PSI),Median_Psi=median(PSI),Variance=var(PSI),SD=sd(PSI), .groups = 'keep') #create summary table
+#create dtatframe with mean median variance standard deviation of the PSI by lot  
+lot_summary <- suspension %>% group_by(Manufacturing_Lot) %>% summarize(Mean_Psi=mean(PSI),Median_Psi=median(PSI),Variance=var(PSI),SD=sd(PSI), .groups = 'keep') 
 
-  
-lot_summary <- suspension %>% group_by(Manufacturing_Lot) %>% summarize(Mean_Psi=mean(PSI),Median_Psi=median(PSI),Variance=var(PSI),SD=sd(PSI), .groups = 'keep') #create summary table with multiple columns
+
+
+
+
+#t test for population mean
+t.test(suspension$PSI,mu=1500)
+
+#building subsets of data for each lot
+lotOne <- subset(suspension, Manufacturing_Lot == "Lot1")
+lotTwo <- subset(suspension,Manufacturing_Lot == "Lot2")
+lotThree <- subset(suspension, Manufacturing_Lot == "Lot3")
+
+#t texts for each lot
+t.test(lotOne$PSI, mu=1500)
+t.test(lotTWo$PSI, mu=1500)
+t.test(lotThree$PSI, mu=1500)
