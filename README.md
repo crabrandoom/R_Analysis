@@ -10,7 +10,7 @@
 
 ![Total_Summary.PNG](https://github.com/crabrandoom/R_Analysis/blob/main/Total_Summary.PNG)
 
-![Lot_Summary.PNG](https://github.com/crabrandoom/R_Analysis/blob/main/Lots_Summary.PNG)
+![Lot_Summary.PNG](https://github.com/crabrandoom/R_Analysis/blob/main/Lot_Summary.PNG)
 
 
 ## T-Tests on Suspension Coils
